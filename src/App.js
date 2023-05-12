@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import "./App.css";
+import Footer from "./component/footer/Footer";
+import HeaderPage from "./component/header/HeaderPage";
+import Login from "./component/login/Login";
+import Cart from "./component/Cart/Cart";
+import SingUp from "./component/SingUp/SingUp";
+import Reset from "./component/Reset/Reset";
+import Home from "./Home";
+import Prectice from "./Prectice";
+import PrecticeFile2 from "./PrecticeFile2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={[<HeaderPage />, <Footer />]} />
+          {/* <Route path="/" element={<HeaderPage />} />
+          <Route path="/" element={<Footer />} /> */}
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/SingUp" element={<SingUp />} />
+          <Route path="/Reset" element={<Reset />} />
+        </Routes>
+      </BrowserRouter>
+     
+      {/* <Prectice />
+      <PrecticeFile2 /> */}
+    </>
   );
 }
 
