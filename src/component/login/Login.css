@@ -1,0 +1,112 @@
+.loginPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-div {
+    margin: 14% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    width: 50%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    width: 87%;
+}
+
+.login-form img {
+    width: 50px;
+}
+
+.login-form h1 {
+    font-size: 14px;
+}
+
+.email-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.email {
+    width: 99%;
+    margin-top: 7px;
+    padding: 10px 0px;
+}
+
+.password-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.password-label {}
+
+.password {
+    width: 99%;
+    margin-top: 7px;
+    padding: 10px 0px;
+}
+
+.btnsubmit {
+    width: 100%;
+    margin-top: 15px;
+    padding: 9px 0px;
+    border-radius: 6px;
+    background-color: #d23f57;
+    border: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.facebookbtn {    width: 87%;
+    margin-top: 15px;
+    padding: 9px 0px;
+    border-radius: 6px;
+    background-color: #3b5998;
+    border: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;}
+
+.googlebtn {width: 87%;
+    margin-top: 10px;
+    padding: 9px 0px;
+    border-radius: 6px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;}
+
+.account {}
+
+.account-span {}
+
+.account-sing {}
+
+.forgetPassword-div {}
+
+.forgetPassword-span {}
+
+.reset {}

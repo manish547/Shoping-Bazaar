@@ -480,7 +480,7 @@ const HeaderPage = () => {
     setManuItem((prevState) =>
       prevState.map((state, i) => (i === index ? true : state))
     );
-    setSelectedPage(null)
+    setSelectedPage(null);
   };
 
   const handleMouseLeave = (index) => {
@@ -524,7 +524,9 @@ const HeaderPage = () => {
           <div className="header-div">
             <div className="headerlogo">
               <img src="./images/logo1.svg" alt="images" className="logo1" />
-              <img src="./images/new16.svg" alt="images" className="new16" />
+              <Link to="/Sidemenu" >
+                <img src="./images/new16.svg" alt="images" className="new16" />
+              </Link>
             </div>
 
             <img src="./images/logo11.svg" alt="images" className="logo11" />
@@ -566,7 +568,8 @@ const HeaderPage = () => {
             </div>
 
             <div className="Account-cart">
-              <BiSearch className="biSearch" />
+              <Link to="/SearchPage">
+              <BiSearch className="biSearch" /></Link>
               <Link to="/Login">
                 <div className="userAccount">
                   {/* <FaUserAlt /> */}
@@ -814,7 +817,7 @@ const HeaderPage = () => {
                                 {selectedPage &&
                                   selectedPage.id === page.id &&
                                   page.version.length !== 0 && (
-                                    <div 
+                                    <div
                                       className="version-dropdown-menu0"
                                       onMouseEnter={() => handleMouseEnter(4)}
                                     >

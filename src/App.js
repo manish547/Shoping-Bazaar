@@ -9,6 +9,8 @@ import Reset from "./component/Reset/Reset";
 import Home from "./Home";
 import Prectice from "./Prectice";
 import PrecticeFile2 from "./PrecticeFile2";
+import Sidemenu from "./component/header/Sidemenu";
+import SearchPage from "./component/header/SearchPage";
 
 function App() {
   return (
@@ -22,11 +24,13 @@ function App() {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/SingUp" element={<SingUp />} />
           <Route path="/Reset" element={<Reset />} />
+          <Route path="/Sidemenu" element={<Sidemenu />} />
+          <Route path="/SearchPage" element={<SearchPage />} />
         </Routes>
       </BrowserRouter>
      
-      {/* <Prectice />
-      <PrecticeFile2 /> */}
+       {/* <Prectice /> */}
+      {/* <PrecticeFile2 />  */}
     </>
   );
 }

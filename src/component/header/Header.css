@@ -38,6 +38,7 @@
     border: 1px solid #d23f57;
 }
 
+
 .searchbar {
     display: flex;
     align-items: center;
@@ -246,6 +247,7 @@
     width: 100%;
     padding: 8px 0px;
 }
+
 .prod-itemli:hover {
     color: #D23F57;
     cursor: pointer;
@@ -271,19 +273,21 @@
     width: 100%;
     border-radius: 8px;
 }
-.menu-logo{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5px;  
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
 }
-.menulogo{
+
+.menulogo {
     width: 16px;
 }
 
 
 .version-dropdown-menu {
-      /* position: absolute; */
+    /* position: absolute; */
     /* left: 11rem; */
     width: 100%;
     background: white;
@@ -299,6 +303,7 @@
     /* gap: 1rem; */
     border-radius: 8px;
 }
+
 .version-dropdown-menu0 {
     width: 100%;
     background: transparent;
@@ -318,20 +323,24 @@
     padding: 8px 0px;
     padding-left: 1rem;
 }
+
 .hovermodalDrop:hover {
     color: #D23F57;
     cursor: pointer;
     /* background: black; */
     background-color: rgba(0, 0, 0, 0.04);
 }
-.name-arrow-div{
+
+.name-arrow-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.arrow{
+
+.arrow {
     font-size: 16px;
 }
+
 .version-dropdown-ui {
     list-style: none;
 
@@ -363,7 +372,7 @@
     padding: 8px 0px;
     padding-left: 1rem;
     width: 90%;
-list-style: none;
+    list-style: none;
 }
 
 .nevDropli:hover {
@@ -414,6 +423,143 @@ list-style: none;
     display: none;
 }
 
+/* sidemenu css */
+
+.sidemenu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidemenu-div {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    padding: 1px 40px;
+    /* background: red; */
+}
+
+.closeicon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 24px;
+    padding-right: 3px;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.menu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-div-spen {
+    padding: 7px 0px;
+    padding-left: 16px;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background: none;
+    width: 100%;
+    color: black;
+}
+
+.menu-btn:hover {
+    color: #D23F57;
+    cursor: pointer;
+}
+.ioClose{color: rgba(0, 0, 0, 0.54);}
+.menuname-span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2b3445;
+    /* padding: 7px 0px;
+    padding-left: 16px; */
+}
+
+.menuname-span:hover {
+    cursor: pointer;
+    color: #D23F57;
+}
+
+.menu-btn h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: none;
+    white-space: normal;
+    margin: 12px 0px;
+    color: rgb(43 52 75);
+}
+
+.menu-btn span {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+
+/* searchpage */
+.headersearchbar-search {
+    display: flex;
+    align-items: center;
+    width: 74%;
+    border: 1px solid #c5c5c5;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.headersearchbar-search:hover {
+    border: 1px solid #d23f57;
+}
+.Searchpage-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    color: #2b3445;
+}
+.SearchPage-searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px
+}
+.SearchPage{
+    margin: 0px 16px;
+    margin-top: 24px;
+}
+.closeSharp{
+    font-size: 1.5rem;
+    color: #757575;
+}
+.search-inpute-Search {
+    width: 100%;
+    border: 1px solid;
+    border-top-left-radius: 16px;
+    padding: 14px;
+    border-bottom-left-radius: 16px;
+    padding-left: 14px;
+    border: none;
+    outline: none;
+}
+.search-inpute-Search::placeholder {
+    color: #b8bdc5;
+}
 
 @media screen and (max-width: 1440px) {
     .header-div {
