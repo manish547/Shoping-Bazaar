@@ -1,23 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import "./Reset.css"
+
 const Reset = () => {
   return (
     <>
-    <div>
-      <div>
+    <div className="resetPage1">
+      <div className="reset-div1">
+         <form className="reset-form1">
         <h1>Reset Your Password</h1>
-        <div>
-         <form>
-          <input type='email' placeholder='Email' />
-          <button type='submit'>Reset</button>
+        <div className="email-div1">
+          <input type='email' placeholder='Email'  className="email1" />
+          <button type='submit' className="btnsubmit1">Reset</button>
+        </div>
         </form> 
 
-        </div>
-        <div>
-                <span>Don't Have Account</span>
+        <div className="account1">
+                <span className="account-span1">Don't Have Account</span>
                 <Link to="/SingUp" >
-                    <button>
+                    <button className="account-sing1">
                         <h6>
                             Sing Up
                         </h6>

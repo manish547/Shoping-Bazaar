@@ -6,46 +6,11 @@ import { IoIosArrowDown, IoMdSearch } from "react-icons/io";
 
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { categoriesData } from "../../Asset/StaticData";
 
-const categoriesData = [
-  {
-    index: 0,
-    id: "car",
-    name: "Car",
-  },
-  {
-    index: 1,
-    id: "clothes",
-    name: "Clothes",
-  },
-  {
-    index: 2,
-    id: "electronics",
-    name: "Electronics",
-  },
-  {
-    index: 3,
-    id: "laptop",
-    name: "Laptop",
-  },
-  {
-    index: 4,
-    id: "desktop",
-    name: "Desktop",
-  },
-  {
-    index: 5,
-    id: "camera",
-    name: "Camera",
-  },
-  {
-    index: 6,
-    id: "toys",
-    name: "Toys",
-  },
-];
 
-const SearchPage = () => {
+
+const SearchPage = ({handleSearchClose}) => {
   const [isListVisible, setIsListVisible] = useState(false);
   const [categoriesitem, setCategoriesitem] = useState("All Categories");
   const menuRef = useRef(null);
@@ -73,14 +38,22 @@ const SearchPage = () => {
     setCategoriesitem(categoriesid);
     setIsListVisible(false);
   };
+
+const hendleiconclose = () => {
+  handleSearchClose()
+}
+
   return (
     <>
       <div>
         <div className="SearchPage">
           <div className="Searchpage-header">
             <div>Search To Bazaar</div>
-            <Link to="/">
-            <IoCloseSharp className="closeSharp" /></Link>
+            {/* <Link to="/"> */}
+              <button className="close-btn">
+                <IoCloseSharp className="closeSharp" onClick={hendleiconclose}/>
+              </button>
+            {/* </Link> */}
           </div>
           <div className="SearchPage-searchbar">
             <div className="headersearchbar-search">
