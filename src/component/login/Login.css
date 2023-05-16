@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh
-    ;
+    height: 100vh;
 }
 
 .login-div {
@@ -46,9 +45,12 @@
 }
 
 .email {
-    width: 99%;
+    width: 94.5% !important;
     margin-top: 7px;
     padding: 12px 0px;
+    padding-left: 18px !important;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .password-div {
@@ -59,13 +61,15 @@
     margin-top: 9px;
 }
 
-.password-label {}
+
 
 .password {
     width: 94.5%;
     margin-top: 7px;
     padding: 12px 0px;
     padding-left: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .btnsubmit {
@@ -105,15 +109,16 @@
 .hr-div {
     width: 200px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     color: rgb(16 59 144);
     background: rgb(243, 245, 249);
     height: 2px;
     position: relative;
 }
+
 .hr {
     margin: 0px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     border-width: 0px 0px thin;
     border-style: solid;
     border-color: rgb(243, 245, 249);
@@ -211,6 +216,23 @@
     align-items: center;
     justify-content: center;
 }
+
+ .btnsubmit:hover {
+    cursor: pointer;
+}
+ .reset:hover {
+    cursor: pointer;
+}
+ .account-sing:hover {
+    cursor: pointer;
+}
+ .googlebtn:hover {
+    cursor: pointer;
+}
+ .facebookbtn:hover {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 660px) {
     .login-div {

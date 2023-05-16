@@ -15,7 +15,7 @@ import {
   prodectData,
   userAccountArray,
   vendorAccountArray,
-} from "../../Asset/StaticData";
+} from "../../asset/StaticData";
 import Sidemenu from "./Sidemenu";
 import SearchPage from "./SearchPage";
 
@@ -79,8 +79,6 @@ const HeaderPage = () => {
     setIsListVisible(false);
   };
 
- 
-
   return (
     <div>
       <div className={`component ${isSidebarVisible ? "visible" : ""}`}>
@@ -124,20 +122,20 @@ const HeaderPage = () => {
                   </button>
                   <div id="manuitem" className="modallist">
                     {isListVisible && (
-                      <ui className="ui-list" ref={menuRef}>
-                        <li key="123" className="li-item">
+                      <div className="ui-list" ref={menuRef}>
+                        <div key="123" className="li-item">
                           All Categories
-                        </li>
+                        </div>
                         {categoriesData.map((item, index) => (
-                          <li
+                          <div
                             key={index}
                             className="li-item"
                             onClick={() => handleCategories(item.name)}
                           >
                             {item.name}
-                          </li>
+                          </div>
                         ))}
-                      </ui>
+                      </div>
                     )}
                   </div>
                 </div>
@@ -145,7 +143,10 @@ const HeaderPage = () => {
 
               <div className="Account-cart">
                 {/* <Link to="/searchPage"> */}
-                  <BiSearch className="biSearch" onClick={() => setIsVisible(true)} /> 
+                <BiSearch
+                  className="biSearch"
+                  onClick={() => setIsVisible(true)}
+                />
                 {/* </Link> */}
                 <Link to="/login">
                   <div className="userAccount">
@@ -199,25 +200,20 @@ const HeaderPage = () => {
                   }}
                 >
                   {product && (
-                    <ui className="prod-item" ref={menuRef}>
+                    <div className="prod-item" ref={menuRef}>
                       {prodectData.map((item, index) => {
-                        console.log(item.items);
                         return (
-                          <li
-                            className="prod-itemli"
-                            key={index}
-                           
-                          >
+                          <div className="prod-itemli" key={index}>
                             <img
                               src={`/images/${item.img}`}
                               alt="img"
                               className="productimg"
                             />
                             {item.name}
-                          </li>
+                          </div>
                         );
                       })}
-                    </ui>
+                    </div>
                   )}
                 </div>
               </div>
@@ -237,11 +233,15 @@ const HeaderPage = () => {
                         onMouseLeave={() => handleMouseLeave(0)}
                       >
                         <div className="nevDrop-item">
-                          <ul className="nevDropui">
-                            {home.map((item) => {
-                              return <li className="nevDropli">{item.name}</li>;
+                          <div className="nevDropui">
+                            {home.map((item, index) => {
+                              return (
+                                <div className="nevDropli" key={index}>
+                                  {item.name}
+                                </div>
+                              );
                             })}
-                          </ul>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -261,11 +261,15 @@ const HeaderPage = () => {
                         onMouseLeave={() => handleMouseLeave(1)}
                       >
                         <div className="nevDrop-item">
-                          <ul className="nevDropui">
-                            {megaManu.map((item) => {
-                              return <li className="nevDropli">{item.name}</li>;
+                          <div className="nevDropui">
+                            {megaManu.map((item, index) => {
+                              return (
+                                <div className="nevDropli" key={index}>
+                                  {item.name}
+                                </div>
+                              );
                             })}
-                          </ul>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -285,22 +289,22 @@ const HeaderPage = () => {
                         onMouseLeave={() => handleMouseLeave(2)}
                       >
                         <div className="nevDrop-item">
-                          <ui className="newDropui">
+                          <div className="newDropui">
                             {fullmenu.map((item, index) => {
                               return (
-                                <li className="nevDropli" key={index}>
+                                <div className="nevDropli" key={index}>
                                   <div className="menu-logo">
                                     <img
                                       src={`/images/${item.logo}`}
                                       alt="logo"
                                       className="menulogo"
                                     />
-                                    <li>{item.name}</li>
+                                    <div>{item.name}</div>
                                   </div>
-                                </li>
+                                </div>
                               );
                             })}
-                          </ui>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -316,14 +320,14 @@ const HeaderPage = () => {
                     {manuItem[3] && (
                       <div className="hovermodal">
                         <div className="nevDrop-item">
-                          <ui
+                          <div
                             className="nevDropui"
                             onMouseEnter={() => handleMouseEnter(3)}
                             onMouseLeave={() => handleMouseLeave(3)}
                           >
-                            {pagesArray.map((page) => (
-                              <ui key={page.id}>
-                                <li
+                            {pagesArray.map((page, index) => (
+                              <div key={index}>
+                                <div
                                   onMouseEnter={() => handlePageSelect(page)}
                                   className="version-ui nevDropli"
                                 >
@@ -341,27 +345,29 @@ const HeaderPage = () => {
                                         onMouseLeave={() => handleMouseLeave(3)}
                                       >
                                         <div className="version-dropdown-menu">
-                                          {page.version.map((version) => (
-                                            <div className="hovermodalDrop">
-                                              <div className="nevDrop-itemDrop">
-                                                <ui
-                                                  key={version.id}
-                                                  className="version-dropdown-ui"
-                                                >
-                                                  <li href="#">
-                                                    {version.name}
-                                                  </li>
-                                                </ui>
+                                          {page.version.map(
+                                            (version, index) => (
+                                              <div
+                                                className="hovermodalDrop"
+                                                key={index}
+                                              >
+                                                <div className="nevDrop-itemDrop">
+                                                  <div className="version-dropdown-ui">
+                                                    <div href="#">
+                                                      {version.name}
+                                                    </div>
+                                                  </div>
+                                                </div>
                                               </div>
-                                            </div>
-                                          ))}
+                                            )
+                                          )}
                                         </div>
                                       </div>
                                     )}
-                                </li>
-                              </ui>
+                                </div>
+                              </div>
                             ))}
-                          </ui>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -377,14 +383,14 @@ const HeaderPage = () => {
                     {manuItem[4] && (
                       <div className="hovermodal">
                         <div className="nevDrop-item">
-                          <ui
+                          <div
                             className="nevDropui"
                             onMouseEnter={() => handleMouseEnter(4)}
                             onMouseLeave={() => handleMouseLeave(4)}
                           >
-                            {userAccountArray.map((page) => (
-                              <ui key={page.id}>
-                                <li
+                            {userAccountArray.map((page, index) => (
+                              <div key={index}>
+                                <div
                                   onMouseEnter={() => handlePageSelect(page)}
                                   className="version-ui nevDropli"
                                 >
@@ -401,27 +407,29 @@ const HeaderPage = () => {
                                         onMouseEnter={() => handleMouseEnter(4)}
                                       >
                                         <div className="version-dropdown-menu">
-                                          {page.version.map((version) => (
-                                            <div className="hovermodalDrop">
-                                              <div className="nevDrop-itemDrop">
-                                                <ui
-                                                  key={version.id}
-                                                  className="version-dropdown-ui"
-                                                >
-                                                  <li href="#">
-                                                    {version.name}
-                                                  </li>
-                                                </ui>
+                                          {page.version.map(
+                                            (version, index) => (
+                                              <div
+                                                className="hovermodalDrop"
+                                                key={index}
+                                              >
+                                                <div className="nevDrop-itemDrop">
+                                                  <div className="version-dropdown-ui">
+                                                    <div href="#">
+                                                      {version.name}
+                                                    </div>
+                                                  </div>
+                                                </div>
                                               </div>
-                                            </div>
-                                          ))}
+                                            )
+                                          )}
                                         </div>
                                       </div>
                                     )}
-                                </li>
-                              </ui>
+                                </div>
+                              </div>
                             ))}
-                          </ui>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -437,16 +445,15 @@ const HeaderPage = () => {
                     {manuItem[5] && (
                       <div className="hovermodal">
                         <div className="nevDrop-item">
-                          <ui
+                          <div
                             className="nevDropui"
                             onMouseEnter={() => handleMouseEnter(5)}
                             onMouseLeave={() => handleMouseLeave(5)}
                           >
-                            {vendorAccountArray.map((page) => {
-                              console.log(page.version);
+                            {vendorAccountArray.map((page, index) => {
                               return (
-                                <ui key={page.id}>
-                                  <li
+                                <div key={index}>
+                                  <div
                                     onMouseEnter={() => handlePageSelect(page)}
                                     className="version-ui nevDropli"
                                   >
@@ -468,28 +475,30 @@ const HeaderPage = () => {
                                           }
                                         >
                                           <div className="version-dropdown-menu">
-                                            {page.version.map((version) => (
-                                              <div className="hovermodalDrop">
-                                                <div className="nevDrop-itemDrop">
-                                                  <ui
-                                                    key={version.id}
-                                                    className="version-dropdown-ui"
-                                                  >
-                                                    <li href="#">
-                                                      {version.name}
-                                                    </li>
-                                                  </ui>
+                                            {page.version.map(
+                                              (version, index) => (
+                                                <div
+                                                  className="hovermodalDrop"
+                                                  key={index}
+                                                >
+                                                  <div className="nevDrop-itemDrop">
+                                                    <div className="version-dropdown-ui">
+                                                      <div href="#">
+                                                        {version.name}
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                                 </div>
-                                              </div>
-                                            ))}
+                                              )
+                                            )}
                                           </div>
                                         </div>
                                       )}
-                                  </li>
-                                </ui>
+                                  </div>
+                                </div>
                               );
                             })}
-                          </ui>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -499,8 +508,7 @@ const HeaderPage = () => {
             </div>
           </div>
         </div>
-      )
-      }
+      )}
     </div>
   );
 };

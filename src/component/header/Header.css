@@ -75,9 +75,11 @@
 
 .modallist {
     position: absolute;
-    top: 9rem;
+    top: 5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     background-color: #fff;
+    width: 9%;
+
 }
 
 .ui-list {
@@ -222,7 +224,7 @@
 
 .prod-item {
     position: absolute;
-    top: 9rem;
+    top: 8.6rem;
     left: 11rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     background-color: #fff;
@@ -233,9 +235,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 1rem 0rem;
-    padding-left: 1rem;
-    /* gap: 15px; */
-    width: 15.5%;
+    
+    width: 16.3%;
 }
 
 .prod-itemli {
@@ -244,8 +245,10 @@
     justify-content: flex-start;
     padding: 0px 0px;
     font-size: 14px;
-    width: 100%;
+    width: 94%;
     padding: 8px 0px;
+    /* background: red; */
+    padding-left: 1rem;
 }
 
 .prod-itemli:hover {

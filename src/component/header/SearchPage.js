@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import { categoriesData } from "../../asset/StaticData";
 import "./Header.css";
 
 import { IoIosArrowDown, IoMdSearch } from "react-icons/io";
-
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import { categoriesData } from "../../Asset/StaticData";
+
 
 
 

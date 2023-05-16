@@ -6,6 +6,7 @@ import Login from "./component/login/Login";
 import Cart from "./component/Cart/Cart";
 import SingUp from "./component/SingUp/SingUp";
 import Reset from "./component/Reset/Reset";
+import Prectice from "./Prectice";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         </Routes>
       </BrowserRouter>
      
-       {/* <Prectice /> */}
+       <Prectice />
       {/* <PrecticeFile2 />  */}
     </>
   );

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 import "./Header.css";
-import {  fullmenu, home, megaManu, pagesArray, userAccountArray, vendorAccountArray } from "../../Asset/StaticData";
+import {  fullmenu, home, megaManu, pagesArray, userAccountArray, vendorAccountArray } from "../../asset/StaticData";
 
 
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 
 
@@ -57,7 +56,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.home &&
                 home.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );
@@ -81,7 +80,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.megaMenu &&
                 megaManu.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );
@@ -105,7 +104,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.fullmenu &&
                 fullmenu.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );
@@ -129,7 +128,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.pagesArray &&
                 pagesArray.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );
@@ -158,7 +157,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.userAccountArray &&
                 userAccountArray.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );
@@ -191,7 +190,7 @@ const Sidemenu = ({handleClose }) => {
               {isOpen.vendorAccountArray &&
                 vendorAccountArray.map((item, index) => {
                   return (
-                    <div key={item.id} className="menu-div-spen">
+                    <div key={index} className="menu-div-spen">
                       <span className="menuname-span">{item.name}</span>
                     </div>
                   );

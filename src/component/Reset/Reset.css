@@ -56,10 +56,12 @@
     margin-top: 7px;
     padding: 12px 0px;
     padding-left: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 
-.btnsubmit1 {
+/* .btnsubmit1 {
     width: 103%;
     margin-top: 15px;
     padding: 16px 0px;
@@ -70,7 +72,7 @@
     font-size: 11px;
     font-weight: 600;
     padding-left: 0px;
-}
+} */
 
 
 
@@ -104,3 +106,46 @@
     align-items: center;
     justify-content: center;
 }
+
+.btnsubmit1:hover {
+    cursor: pointer;
+}
+.account-sing1:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.btnn{
+    font-family: 'Roboto';
+    font-size: 24px;
+    padding: 1em 2em;
+    margin: 2px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: #2196f3;
+    text-transform: uppercase;
+    border-radius: 0.15em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btnn .ripple{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+  }
+  
+  @keyframes ripple{
+    to{
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }

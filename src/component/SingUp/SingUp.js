@@ -11,7 +11,7 @@ const SingUp = () => {
     <>
       <div className="singinPage">
         <div className="singin-div">
-          <from className="singin-form">
+          <div className="singin-form">
             <img src="./images/bazaar-black-sm.svg" alt="bazaar" />
             <h1>Welcome To Bazaar</h1>
             <div className="email-div">
@@ -37,7 +37,7 @@ const SingUp = () => {
               </label>
             </div>
             <button type="submit" className="btnsubmit">Create Account</button>
-          </from>
+          </div>
           <div className="line-div">
             <div className="hr-div"><hr className="hr"></hr></div>
             <div className="or-div">Or</div>
