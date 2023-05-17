@@ -7,6 +7,7 @@ import Cart from "./component/Cart/Cart";
 import SingUp from "./component/SingUp/SingUp";
 import Reset from "./component/Reset/Reset";
 import Prectice from "./Prectice";
+import PrecticeFile2 from "./PrecticeFile2";
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
         </Routes>
       </BrowserRouter>
      
-       <Prectice />
-      {/* <PrecticeFile2 />  */}
+       {/* <Prectice /> */}
+      <PrecticeFile2 /> 
     </>
   );
 }
