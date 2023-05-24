@@ -11,24 +11,24 @@ const SingUp = () => {
     <>
       <div className="singinPage">
         <div className="singin-div">
-          <div className="singin-form">
+          <form className="singin-form">
             <img src="./images/bazaar-black-sm.svg" alt="bazaar" />
             <h1>Welcome To Bazaar</h1>
             <div className="email-div">
               <label className="email-label">Full Name</label>
-              <input type="text" placeholder="Manish Chhotala" className="email" />
+              <input type="text" placeholder="Manish Chhotala" className="email"  autoComplete="username"/>
             </div>
             <div className="email-div">
               <label className="email-label">Email Or Phone Number</label>
-              <input type="email" placeholder="exmple@email.com" className="email" />
+              <input type="email" placeholder="exmple@email.com" className="email"  autoComplete="username" />
             </div>
             <div className="password-div" >
               <label className="password-label">Password</label>
-              <input type="Password" placeholder="*********" className="password" />
+              <input type="Password" placeholder="*********" className="password" autoComplete="current-password" />
             </div>
             <div className="password-div">
               <label className="password-label">Retype Password</label>
-              <input className="password" type="text" placeholder="*********" />
+              <input className="password" type="text" placeholder="*********"  autoComplete="current-password"/>
             </div>
             <div className="Checkbox-div">
               <input type="Checkbox" className="checkbox"/>
@@ -37,7 +37,7 @@ const SingUp = () => {
               </label>
             </div>
             <button type="submit" className="btnsubmit">Create Account</button>
-          </div>
+          </form>
           <div className="line-div">
             <div className="hr-div"><hr className="hr"></hr></div>
             <div className="or-div">Or</div>

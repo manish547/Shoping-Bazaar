@@ -1,36 +1,41 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
+import "./Reset.css"
 import { Link } from "react-router-dom";
 
 const Reset = () => {
-  const buttonRef = useRef(null);
+const btnref = useRef(null)
+  
+const handleClick = (e) => {
+  e.preventDefault()
+  const {current} = btnref
+      const x = e.clientX;
+      const y = e.clientY;
 
-  const handleClick = (e) => {
-    e.preventDefault(); 
+      const buttonTop = e.target.offsetTop;
+      const buttonLeft = e.target.offsetLeft;
 
-    const button = buttonRef.current;
-    const ripple = document.createElement('span');
-    ripple.classList.add('ripple');
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
-    ripple.style.width = `${diameter}px`;
-    ripple.style.height = `${diameter}px`;
-    ripple.style.left = `${e.clientX - button.offsetLeft - radius}px`;
-    ripple.style.top = `${e.clientY - button.offsetTop - radius}px`;
-    button.appendChild(ripple);
-    setTimeout(() => {
-      button.removeChild(ripple);
-    }, 600);
-  };
+      const xInside = x - buttonLeft;
+      const yInside = y - buttonTop;
+
+      const circle = document.createElement("span");
+      circle.classList.add("circle");
+      circle.style.top = yInside + "px";
+      circle.style.left = xInside + "px";
+
+      current.appendChild(circle);
+
+      setTimeout(() => circle.remove(), 500);
+    }
 
   return (
     <>
       <div className="resetPage1">
         <div className="reset-div1">
-          <form className="reset-form1">
+          <form className="reset-form1" >
             <h1>Reset Your Password</h1>
             <div className="email-div1">
               <input type='email' placeholder='Email' className="email1" />
-              <button className='btnn' onClick={handleClick} ref={buttonRef}>test 1</button>
+              <button className='btnnn ripple ' ref={btnref} onClick={(e) => handleClick(e)} >Reset</button>
             </div>
           </form>
 

@@ -16,24 +16,32 @@ const Footer = () => {
               libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat
               et lectus vel ut sollicitudin elit at amet.
             </p>
-            <div className="social-info" ><div className="footer-google">
-              <div className="social-google">
-              <img src="./images/new18.svg" alt="images" className="new18" />
-              </div>
-              <div className="mideaname">
-                <span className="store0">Get It On</span>
-                <span className="store1">Google Play</span>
-              </div>
+            <div className="social-info" >
+              <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" className="link-tag">
+                  <div className="footer-google">
+                
+                    <div className="social-google">
+                      <img src="./images/new18.svg" alt="images" className="new18" />
+                    </div>
+                    <div className="mideaname">
+                      <span className="store0">Get It On</span>
+                      <span className="store1">Google Play</span>
+                    </div>
+                    
+                  </div>
+                </a>
+                <a href="https://www.apple.com/in/app-store/" target="_blank" rel="noopener noreferrer" className="link-tag">
+                  <div className="footer-google">
+                    <div className="social-google">
+                      <img src="./images/new19.svg" alt="images" className="new19" />
+                    </div>
+                    <div className="mideaname">
+                      <span className="store0">Download On The </span>
+                      <span className="store1">App Store</span>
+                    </div>
+                  </div> 
+                </a>
             </div>
-            <div className="footer-google">
-              <div className="social-google">
-              <img src="./images/new19.svg" alt="images" className="new19" />
-              </div>
-              <div className="mideaname">
-                <span className="store0">Download On The </span>
-                <span className="store1">App Store</span>
-              </div>
-            </div></div>
             
           </div>
           <div className="footer-about">
@@ -70,12 +78,13 @@ const Footer = () => {
                 <AiFillTwitterCircle  className="social-icon"/>
                 <SiYoutubemusic className="social-icon" />
                 <AiFillInstagram  className="social-icon"/> */}
-                <div className="icon-div"><img src="./images/new20.svg" alt="images" className="new20 social-icon" /></div>
-                <div className="icon-div"><img src="./images/new21.svg" alt="images" className="new21 social-icon" /></div>
-                <div className="icon-div"><img src="./images/new22.svg" alt="images" className="new22 social-icon" /></div>
-                <div className="icon-div"><img src="./images/new23.svg" alt="images" className="new23 social-icon" /></div>
-                <div className="icon-div"><img src="./images/new24.svg" alt="images" className="new24 social-icon" /></div>
+                <div className="icon-div"><a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer"><img src="./images/new20.svg" alt="images" className="new20 social-icon" /></a></div>
+                <div className="icon-div"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="./images/new21.svg" alt="images" className="new21 social-icon" /></a></div>
+                <div className="icon-div"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="./images/new22.svg" alt="images" className="new22 social-icon" /></a></div>
+                <div className="icon-div"><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="./images/new23.svg" alt="images" className="new23 social-icon" /></a></div>
+                <div className="icon-div"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="./images/new24.svg" alt="images" className="new24 social-icon" /></a></div>
               </div>
+              
 
               
             </div>

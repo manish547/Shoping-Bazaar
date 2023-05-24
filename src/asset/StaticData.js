@@ -3,36 +3,41 @@ import { AiFillCaretRight } from "react-icons/ai";
 export const categoriesData = [
     {
       index: 0,
+      id: "All Categories",
+      name: "All Categories",
+    },
+    {
+      index: 1,
       id: "car",
       name: "Car",
     },
     {
-      index: 1,
+      index: 2,
       id: "clothes",
       name: "Clothes",
     },
     {
-      index: 2,
+      index: 3,
       id: "electronics",
       name: "Electronics",
     },
     {
-      index: 3,
+      index: 4,
       id: "laptop",
       name: "Laptop",
     },
     {
-      index: 4,
+      index: 5,
       id: "desktop",
       name: "Desktop",
     },
     {
-      index: 5,
+      index: 6,
       id: "camera",
       name: "Camera",
     },
     {
-      index: 6,
+      index: 7,
       id: "toys",
       name: "Toys",
     },
@@ -446,3 +451,20 @@ export const categoriesData = [
       version: [],
     },
   ];
+
+  export const SliderArray = [
+    {
+      index:0,
+      tital1:"Fashionable",
+      tital2:"Collection",
+      discription:"Get Free Shipping On All Orders Over $99.00",
+      img:"./images/bag.png"
+    },
+    {
+      index:1,
+      tital1:"Fashionable",
+      tital2:"Collection",
+      discription:"Get Free Shipping On All Orders Over $99.00",
+      img:"./images/nike-black.png"
+    },
+  ]

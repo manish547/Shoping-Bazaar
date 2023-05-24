@@ -18,6 +18,8 @@ import {
 } from "../../asset/StaticData";
 import Sidemenu from "./Sidemenu";
 import SearchPage from "./SearchPage";
+import Footer from "../footer/Footer";
+import Slider from "../slider/Slider";
 
 const HeaderPage = () => {
   const [isListVisible, setIsListVisible] = useState(false);
@@ -79,6 +81,8 @@ const HeaderPage = () => {
     setIsListVisible(false);
   };
 
+
+
   return (
     <div>
       <div className={`component ${isSidebarVisible ? "visible" : ""}`}>
@@ -123,9 +127,9 @@ const HeaderPage = () => {
                   <div id="manuitem" className="modallist">
                     {isListVisible && (
                       <div className="ui-list" ref={menuRef}>
-                        <div key="123" className="li-item">
+                        {/* <div key="123" className="li-item">
                           All Categories
-                        </div>
+                        </div> */}
                         {categoriesData.map((item, index) => (
                           <div
                             key={index}
@@ -509,8 +513,9 @@ const HeaderPage = () => {
           </div>
         </div>
       )}
+    {<Slider />}
+      {!isSidebarVisible && !isVisible && <Footer />}
     </div>
   );
 };
-
 export default HeaderPage;

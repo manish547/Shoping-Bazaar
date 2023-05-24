@@ -1,20 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./component/footer/Footer";
+
 import HeaderPage from "./component/header/HeaderPage";
 import Login from "./component/login/Login";
 import Cart from "./component/Cart/Cart";
 import SingUp from "./component/SingUp/SingUp";
 import Reset from "./component/Reset/Reset";
-import Prectice from "./Prectice";
-import PrecticeFile2 from "./PrecticeFile2";
+import Slider from "./component/slider/Slider";
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={[<HeaderPage />, <Footer />]} />
+          {/* <Route path="/" element={[<HeaderPage />, <Footer />]} /> */}
+          <Route path="/" element={<HeaderPage /> } />
           {/* <Route path="/" element={<HeaderPage />} />
           <Route path="/" element={<Footer />} /> */}
           <Route path="/login" element={<Login />} />
@@ -26,8 +27,9 @@ function App() {
         </Routes>
       </BrowserRouter>
      
+      
        {/* <Prectice /> */}
-      <PrecticeFile2 /> 
+      {/* <PrecticeFile2 />  */}
     </>
   );
 }

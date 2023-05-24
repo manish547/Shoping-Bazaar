@@ -119,56 +119,28 @@
 
 
 
-.btnn{
-    font-family: 'Roboto';
-    font-size: 24px;
-    padding: 1em 2em;
-    margin: 2px;
-    border: 0;
-    outline: 0;
-    color: white;
-    background-color: #2196f3;
-    text-transform: uppercase;
-    border-radius: 0.15em;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .btnn .ripple{
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    transform: scale(0);
-    animation: ripple 0.6s linear;
-  }
-  
-  @keyframes ripple{
-    to{
-      transform: scale(2.5);
-      opacity: 0;
-    }
+
+
+.btnnn{
+       width: 102.5%;
+       margin-top: 16px;
+       font-size: 13px;
+       font-weight: 600;
+       padding: 10px 0px;
+       border: 0;
+       outline: 0;
+       color: white;
+       background-color: #d23f57;
+       border-radius: 5px;
+       box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
+       position: relative;
+       overflow: hidden;
+       cursor: pointer;
+   
   }
 
 
 
-  .ripple {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    animation: rippleEffect 0.6s linear;
-    @keyframes rippleEffect {
-      from {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 0.4;
-      }
-      to {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0;
-      }
-    }
-  }
+
+ 
   

@@ -70,12 +70,12 @@ const hendleiconclose = () => {
                 >
                   {categoriesitem} <IoIosArrowDown />
                 </button>
-                <div id="manuitem" className="modallist">
+                <div id="manuitem" className="modallist2">
                   {isListVisible && (
-                    <ui className="ui-list" ref={menuRef}>
-                      <li key="123" className="li-item">
+                    <div className="ui-list" ref={menuRef}>
+                      {/* <li key="123" className="li-item">
                         All Categories
-                      </li>
+                      </li> */}
                       {categoriesData.map((item, index) => (
                         <li
                           key={index}
@@ -85,7 +85,7 @@ const hendleiconclose = () => {
                           {item.name}
                         </li>
                       ))}
-                    </ui>
+                    </div>
                   )}
                 </div>
               </div>

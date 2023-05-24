@@ -20,6 +20,7 @@ const Login = () => {
                 type="email"
                 placeholder="exmple@email.com"
                 className="email"
+                autoComplete ="username"
               />
             </div>
 
@@ -29,6 +30,7 @@ const Login = () => {
                 type="password"
                 placeholder="*******"
                 className="password"
+                autoComplete="current-password"
               />
             </div>
             <button type="submit" className="btnsubmit">
