@@ -7,12 +7,12 @@ import CustomSlider from '../../asset/CustomSlider'
 const Slider = () => {
     return (
         <>
-            <CustomSlider className='content'>
+            <CustomSlider  className='content'>
                 {SliderArray.map((item, index) => {
                     
-                    return <div className="maincontainer">
+                    return <div className="maincontainer" key={index}>
                         <div className="container">
-                            <div key={index} className='slider'>
+                            <div  className='slider'>
                                 <div className='ditail'>
                                     <h1 className='heading'>{item.tital1}</h1>
                                     <h1 className='heading'> {item.tital2}</h1>

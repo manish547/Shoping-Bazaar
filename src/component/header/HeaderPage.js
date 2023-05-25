@@ -20,6 +20,7 @@ import Sidemenu from "./Sidemenu";
 import SearchPage from "./SearchPage";
 import Footer from "../footer/Footer";
 import Slider from "../slider/Slider";
+import Product from "../Homepage/Product";
 
 const HeaderPage = () => {
   const [isListVisible, setIsListVisible] = useState(false);
@@ -513,7 +514,8 @@ const HeaderPage = () => {
           </div>
         </div>
       )}
-    {<Slider />}
+    {!isSidebarVisible && !isVisible && <Slider />}
+    {<Product />}
       {!isSidebarVisible && !isVisible && <Footer />}
     </div>
   );

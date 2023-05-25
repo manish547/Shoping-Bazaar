@@ -1,53 +1,49 @@
-import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../component/slider/Slider.css';
 
-const settings = {
+
+
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     duration: 4000,
-    slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 0,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    
+    
     responsive: [
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        // {
-        //     breakpoint: 1024,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //     },
-        // },
+      },
     ],
-};
+  };
 
-const CustomSlider = ({children}) => {
+  const CustomSlider = ({children}) => {
+
   return (
     <div className="xl:max-w-[800px] post-slider">
-    <Slider {...settings} className="slick-slider-custom">
+      <Slider {...settings} className="slick-slider-custom" >
         {children}
-    </Slider>
-</div>
-  )
-}
+      </Slider>
+    </div>
+  );
+};
 
-export default CustomSlider
+export default CustomSlider;

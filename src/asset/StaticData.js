@@ -468,3 +468,53 @@ export const categoriesData = [
       img:"./images/nike-black.png"
     },
   ]
+
+  export const Offer = [
+    {
+      index:0,
+      img: "./images/logo31.svg",
+      tital: "Fast Delivery",
+      Daitail: "Start From $10"
+    },
+    {
+      index:1,
+      img: "./images/logo32.svg",
+      tital: "Money Guarantee",
+      Daitail: "7 Days Back"
+    },
+    {
+      index:2,
+      img: "./images/logo33.svg",
+      tital: "365 Days",
+      Daitail: "For Free Return"
+    },
+    {
+      index:3,
+      img: "./images/logo34.svg",
+      tital: "Payment",
+      Daitail: "Secure System"
+    },
+  ];
+
+ export const BestSelling = [
+  {
+    index:0,
+    img:"./images/t-shirt4.png",
+    heading:"Men's Fashion"
+  },
+  {
+    index:1,
+    img:"./images/t-shirt5.png",
+    heading:"Women's Fashion"
+  },
+  {
+    index:2,
+    img:"./images/smartwatch-2.png",
+    heading:"Gadgets"
+  },
+  {
+    index:3,
+    img:"./images/casmatics.jpg",
+    heading:"Cosmatics"
+  },
+ ]
