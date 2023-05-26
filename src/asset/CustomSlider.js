@@ -38,7 +38,7 @@ import '../component/slider/Slider.css';
   const CustomSlider = ({children}) => {
 
   return (
-    <div className="xl:max-w-[800px] post-slider">
+    <div className="post-slider">
       <Slider {...settings} className="slick-slider-custom" >
         {children}
       </Slider>

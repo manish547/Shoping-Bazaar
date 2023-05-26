@@ -85,7 +85,7 @@ const HeaderPage = () => {
 
 
   return (
-    <div>
+    <div className="">
       <div className={`component ${isSidebarVisible ? "visible" : ""}`}>
         <Sidemenu handleClose={() => setIsSidebarVisible(false)} />
       </div>

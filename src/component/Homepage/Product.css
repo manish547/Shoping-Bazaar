@@ -20,11 +20,13 @@
     justify-content: center;
     gap: 1rem;
     /* padding: 0rem 4rem; */
-    border-right: 1px solid DAE1E7;
-    border-right: 1px solid #DAE1E9;
     max-width: 308px;
     max-height: 48px;
     /* background: red; */
+}
+
+.border-rigth{
+    border-right: 1px solid #DAE1E9;
 }
 
 .offer-img {}
@@ -123,15 +125,32 @@
 
 }
 
-.sellingCantainer {}
+.sellingCantainer { 
+    overflow: hidden;
+    width: 290px;
+    height: 288px;
+    margin-bottom: 42px;
+}
 
 .sellingimg {
     width: 290px;
     height: 288px;
     border-radius: 6px;
     transition: all 1.0s;
+    transform: scale(1.1);
+    /* overflow: hidden; */
 }
-.sellingimg:hover{
+/* .sellingimg:hover{
+    transform: scale(1.1);
+} */
+.sellingimg1 {
+    width: 290px;
+    height: 288px;
+    border-radius: 6px;
+    transition: all 1.0s;
+    /* overflow: hidden; */
+}
+.sellingimg1:hover{
     transform: scale(1.1);
 }
 
@@ -154,6 +173,8 @@
     border-radius: 6px;
     font-size: 17px;
     transition: all 1.0s;
+    background-color: black;
+    color: white;
 }
 .sellbtn1 {
     width: 100%;
@@ -173,7 +194,12 @@
 .sellbtn:hover {
     background-color: black;
     color: white;
-    font-weight: 600;
+    
+}
+.sellbtn1:hover {
+    background-color: black;
+    color: white;
+    
 }
 
 @media screen and (max-width: 1440px) {

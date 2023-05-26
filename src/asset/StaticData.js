@@ -518,3 +518,79 @@ export const categoriesData = [
     heading:"Cosmatics"
   },
  ]
+
+ export const Bazzaritem = [
+  {
+    index:0,
+    img:"./images/Product1.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Silver High Neck Sweater",
+    Price:"$210.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:1,
+    img:"./images/Product2.png",
+    FashionName:"Women's Fashion",
+    ProductName:"Yellow Casual Sweater ",
+    Price:"$110.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:2,
+    img:"./images/Product3.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Denim Blue jeans",
+    Price:"$140.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:3,
+    img:"./images/Product4.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Black White Sweater",
+    Price:"$180.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  
+  {
+    index:4,
+    img:"./images/Product5.png",
+    FashionName:"Woman's Fashion",
+    ProductName:"Gray Overcoat Women",
+    Price:"$110.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:5,
+    img:"./images/Product6.png",
+    FashionName:"Fashion",
+    ProductName:"Women's Fashion",
+    Price:"$140.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:6,
+    img:"./images/Product7.png",
+    FashionName:"Menn's Fashion",
+    ProductName:"Nick Red",
+    Price:"$210.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:7,
+    img:"./images/Product8.png",
+    FashionName:"Women's Fashion",
+    ProductName:"North Star Blue",
+    Price:"$110.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+ ]
