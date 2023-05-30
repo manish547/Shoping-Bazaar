@@ -43,7 +43,7 @@ export const categoriesData = [
     },
   ];
   
- export  const prodectData = [
+export  const prodectData = [
     {
       index: 0,
       id: "fashion",
@@ -535,7 +535,7 @@ export const categoriesData = [
     FashionName:"Women's Fashion",
     ProductName:"Yellow Casual Sweater ",
     Price:"$110.00",
-    ratiing:4,
+    ratiing:2,
     Reviews:"(0 Reviews)"
   },
   {
@@ -544,7 +544,7 @@ export const categoriesData = [
     FashionName:"Men's Fashion",
     ProductName:"Denim Blue jeans",
     Price:"$140.00",
-    ratiing:4,
+    ratiing:3,
     Reviews:"(0 Reviews)"
   },
   {
@@ -553,7 +553,7 @@ export const categoriesData = [
     FashionName:"Men's Fashion",
     ProductName:"Black White Sweater",
     Price:"$180.00",
-    ratiing:4,
+    ratiing:5,
     Reviews:"(0 Reviews)"
   },
   
@@ -581,7 +581,7 @@ export const categoriesData = [
     FashionName:"Menn's Fashion",
     ProductName:"Nick Red",
     Price:"$210.00",
-    ratiing:4,
+    ratiing:3,
     Reviews:"(0 Reviews)"
   },
   {
@@ -594,3 +594,197 @@ export const categoriesData = [
     Reviews:"(0 Reviews)"
   },
  ]
+export const AD = [
+  {
+    index:0,
+    name: "For Men's",
+    price:"Starting At $29",
+    img:"./images/m1.jpg"
+  },
+  {
+    index:1,
+    name: "Up to 20% off",
+    price:"Black Friday",
+    img:"./images/m2.jpg"
+  },
+  {
+    index:0,
+    name: "For Women's",
+    price:"25% Off",
+    img:"./images/m3.jpg"
+  },
+]
+
+export const FeaturedProducts = [
+  {
+    index:0,
+    img:"./images/f1.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Denim Classic Blue Jeans",
+    Price:"$310.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:1,
+    img:"./images/f2.png",
+    FashionName:"Women's Fashion",
+    ProductName:"Double Wool Overcoat ",
+    Price:"$310.00",
+    ratiing:2,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:2,
+    img:"./images/f3.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Royal Black Suit Pant",
+    Price:"$1,140.00",
+    ratiing:3,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:3,
+    img:"./images/f4.png",
+    FashionName:"Men's Fashion",
+    ProductName:"Blue Trousers",
+    Price:"$180.00",
+    ratiing:5,
+    Reviews:"(0 Reviews)"
+  },
+  
+  {
+    index:4,
+    img:"./images/f5.png",
+    FashionName:"Woman's Fashion",
+    ProductName:"Women's Fashion",
+    Price:"$140.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:5,
+    img:"./images/f6.png",
+    FashionName:"Women's Fashion",
+    ProductName:"Gray Overcoat Women",
+    Price:"$110.00",
+    ratiing:4,
+    Reviews:"(0 Reviews)"
+  },
+  {
+    index:6,
+    img:"./images/f3.png",
+    FashionName:"Fashion",
+    ProductName:"Woman's Fashion",
+    Price:"$140.00",
+    ratiing:3,
+    Reviews:"(0 Reviews)"
+  },
+ ]
+
+export const LatestArticles = [
+  {
+    index:0,
+    date:"21 SEP",
+    img:"./images/blog-1.jpg",
+    sale:"30% Off Coupon For Black Friday",
+  },
+  {
+    index:1,
+    date:"21 SEP",
+    img:"./images/blog-2.jpg",
+    sale:"10% Discount For Cosmatics",
+  },
+  {
+    index:2,
+    date:"21 SEP",
+    img:"./images/blog-3.jpg",
+    sale:"Buy 2 get 1 free Offer",
+  }
+]
+export const Productdata = [
+  {
+    index:0,
+    img:"./images/a1.jpg",
+    name:"Denim Classic Blue Jeans",
+    Price:"$310.00",
+    reting:4,
+  },
+  {
+    index:1,
+    img:"./images/a2.jpg",
+    name:"Double Wool Overcoat",
+    Price:"$310.00",
+    reting:4,
+  },
+  {
+    index:2,
+    img:"./images/a3.jpg",
+    name:"Royal Black Suit Pant",
+    Price:"$310.00",
+    reting:4,
+  },
+  {
+    index:3,
+    img:"./images/a4.jpg",
+    name:"Nike red",
+    Price:"$210.00",
+    reting:4,
+  },
+  {
+    index:4,
+    img:"./images/a5.jpg",
+    name:"North Star Blue",
+    Price:"$110.00",
+    reting:4,
+  },
+  {
+    index:5,
+    img:"./images/a6.jpg",
+    name:"Puma Black",
+    Price:"$110.00",
+    reting:4,
+  },
+  {
+    index:6,
+    img:"./images/a7.jpg",
+    name:"Black Metal Ring",
+    Price:"$140.00",
+    reting:4,
+  },
+  {
+    index:7,
+    img:"./images/a8.jpg",
+    name:"Heavy Stone ColorFul Necklace",
+    Price:"$1,140.00",
+    reting:4,
+  },
+  {
+    index:8,
+    img:"./images/a9.jpg",
+    name:"Indian Copper Earrings",
+    Price:"$310.00",
+    reting:4,
+  },
+  {
+    index:9,
+    img:"./images/a10.jpg",
+    name:"Gray Overcoat Women",
+    Price:"$110.00",
+    reting:4,
+  },
+  {
+    index:10,
+    img:"./images/a11.jpg",
+    name:"Women's Fashion",
+    Price:"$140.00",
+    reting:4,
+  },
+  {
+    index:11,
+    img:"./images/a12.jpg",
+    name:"Blue Trousers",
+    Price:"$180.00",
+    reting:4,
+  },
+]

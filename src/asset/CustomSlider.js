@@ -36,6 +36,7 @@ import '../component/slider/Slider.css';
   };
 
   const CustomSlider = ({children}) => {
+    console.log(children,"bdgasjdgasjdghuia")
 
   return (
     <div className="post-slider">

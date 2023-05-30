@@ -6,7 +6,6 @@ import Login from "./component/login/Login";
 import Cart from "./component/Cart/Cart";
 import SingUp from "./component/SingUp/SingUp";
 import Reset from "./component/Reset/Reset";
-import Slider from "./component/slider/Slider";
 
 
 function App() {
